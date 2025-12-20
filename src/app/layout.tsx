@@ -34,7 +34,9 @@ export default function RootLayout({
           <LocaleProvider>
             <AppRouterCacheProvider>
               <CustomThemeProvider>
-                <IntlRegistry>{children}</IntlRegistry>
+                <IntlRegistry>
+                  <ErrorBoundary>{children}</ErrorBoundary>
+                </IntlRegistry>
               </CustomThemeProvider>
             </AppRouterCacheProvider>
           </LocaleProvider>

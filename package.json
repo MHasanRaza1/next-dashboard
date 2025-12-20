@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "cspell": "cspell .",
+    "check-deps": "echo \"deps check skipped\""
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -28,13 +31,18 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@eslint/js": "^9.39.2",
     "@types/lodash": "^4.17.21",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
+    "cspell": "^9.4.0",
+    "eslint": "^9.39.2",
     "eslint-config-next": "16.1.0",
-    "typescript": "^5"
+    "lefthook": "^2.0.12",
+    "typescript": "^5.9.3"
   }
 }

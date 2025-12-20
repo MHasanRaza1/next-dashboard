@@ -1,0 +1,27 @@
+# EXAMPLE USAGE
+# Refer for explanation to following link:
+# https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md
+#
+
+pre-commit:
+  parallel: true
+  commands:
+    formatting:
+      run: npx prettier --write "**/*.{ts,tsx,js,jsx,json,css,scss,md,yml,yaml}"
+    spelling:
+      run: npx cspell .
+    check-deps:
+      run: echo "deps check skipped"
+
+commit-msg:
+  parallel: true
+  commands:
+    # Optional: simple spell-check on commit message
+    spell-check:
+      run: npx cspell {1}
+
+pre-push:
+  parallel: true
+  commands:
+    build:
+      run: npm run build

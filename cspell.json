@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": ["typescript", "node"],
+  "ignorePaths": [
+    "node_modules/**",
+    ".next/**",
+    "dist/**",
+    "build/**",
+    "package-lock.json"
+  ],
+  "words": ["Nextjs", "lefthook", "commitlint", "eslint", "tsx", "jsx"]
+}

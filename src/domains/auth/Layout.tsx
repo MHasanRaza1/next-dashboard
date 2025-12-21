@@ -69,6 +69,9 @@ export function Layout({ children }: LayoutProps): React.JSX.Element {
               {/* <Typography component="span" variant="h5">
                 {config.site.name}
               </Typography> */}
+              <Typography component="span" variant="h5">
+                Dashboard
+              </Typography>
             </Typography>
             <Typography align="center" variant="subtitle1" mx={10}>
               <FormattedMessage {...messages.description} />

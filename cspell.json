@@ -9,5 +9,15 @@
     "build/**",
     "package-lock.json"
   ],
-  "words": ["Nextjs", "lefthook", "commitlint", "eslint", "tsx", "jsx"]
+  "words": [
+    "Nextjs",
+    "lefthook",
+    "commitlint",
+    "eslint",
+    "tsx",
+    "jsx",
+    "mcqs",
+    "banaya",
+    "Aapka"
+  ]
 }

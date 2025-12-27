@@ -12,7 +12,7 @@ export const HeaderContainer = styled(Box)<HeaderContainerProps>(
     justifyContent: "space-between",
     padding: theme.spacing(2),
     minHeight: "64px",
-  })
+  }),
 );
 
 export const MobileDrawer = styled(Drawer)<MobileDrawerProps>(({ theme }) => ({

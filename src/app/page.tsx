@@ -103,6 +103,7 @@ function Home() {
   //       </Stack>
   //     </form>
   //   );
+  return <div>Home Page</div>;
 }
 
 export default Home;

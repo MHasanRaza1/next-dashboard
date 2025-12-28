@@ -16,7 +16,7 @@ import images from "@/assets/images";
 
 import { routes } from "@/router/routes";
 
-// import { usePermissionNavItems } from '../config';
+import { usePermissionNavItems } from "../config";
 import { NavList } from "../NavItems";
 
 import { SideNav, SideNavContainer } from "./Styled";
@@ -26,14 +26,14 @@ export function SideNavBar(): React.JSX.Element {
   const {
     light: { palette },
   } = colorSchemes;
-  //   const navItems = usePermissionNavItems();
+  const navItems = usePermissionNavItems();
 
   return (
     <SideNavContainer>
       <SideNav>
         <Box
           component={RouterLink}
-          href={"/"}
+          href={routes.dashboard}
           sx={{ display: "flex", justifyContent: "center", p: "24px" }}
         >
           <ImageWrapper
@@ -44,7 +44,7 @@ export function SideNavBar(): React.JSX.Element {
           />
         </Box>
         <Divider sx={{ borderColor: palette.stroke }} />
-        {/* <NavList pathname={pathname} items={navItems} /> */}
+        <NavList pathname={pathname} items={navItems} />
       </SideNav>
     </SideNavContainer>
   );

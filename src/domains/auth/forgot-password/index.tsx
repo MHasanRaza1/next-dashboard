@@ -17,7 +17,7 @@ export default function ForgotPasswordForm() {
     initialValues,
     onSubmit: (values) => {
       console.log("Form submitted with values:", values);
-      router.push(routes.home);
+      router.push(routes.dashboard);
     },
   });
 

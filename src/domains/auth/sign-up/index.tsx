@@ -47,7 +47,7 @@ export default function SignupForm() {
     validationSchema: signupValidationSchema({ validationMessages }),
     onSubmit: (values) => {
       console.log("Form submitted with values:", values);
-      router.push(routes.home);
+      router.push(routes.dashboard);
     },
   });
 

@@ -39,7 +39,7 @@ export default function SigninForm() {
     validationSchema: signinValidationSchema({ validationMessages }),
     onSubmit: (values) => {
       console.log("Form submitted with values:", values);
-      router.push(routes.home);
+      router.push(routes.dashboard);
     },
   });
 
